@@ -3,17 +3,14 @@
     <title>The Gossip Project</title>
   </head>
   <body>
-    <h1>Mon super site de gossip, depuis le dossier views !</h1>
-    <p><a href="/gossips/new/">Colporte un potin pour la modique somme de 15€/mois</a></p>
-    
-    <h1>La listes de tous les Gossips</h1>
-      <form action='/gossips/all/'>
-        <% gossips.each do |gossip| %>
-                <p>
-                  <%= gossip.author %><br/>
-                  <%= gossip.content %>
-                </p>
-              <% end %>
-      </form>
+    <h1>Coucou il y a pas encore de potin, mais tu peux en crée un !</h1>
+    <a href="/gossips/new/">Une idée de potin(s) à ajouter ?</a>
+    <% gossips.each_with_index do |gossip, index| %>
+    <a href="http://localhost:4567/gossips/<%= index + 1 %>">
+      <p>
+        <%= gossip.author %><br/>
+        <%= gossip.content %>
+      </p></a>
+    <% end %>
   </body>
 </html>

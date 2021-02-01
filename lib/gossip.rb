@@ -11,12 +11,11 @@ class Gossip
   end
   #Sauvegarder les potins + autheurs dans un CSV
   def save
-    #mode = 'a' write only appends data at end of file
-    CSV.open("db/gossip.csv", "a") do |csv|
+    CSV.open("db/gossip.csv", "ab") do |csv|
       csv << @array
     end
   end
-
+  #Méthode qui retourne l'ingralité des gossips
   def self.all
     all_gossips = []
     CSV.read("./db/gossip.csv").each do |csv_line|
@@ -24,16 +23,14 @@ class Gossip
     end
     return all_gossips
   end
-
+  #Méthode qui retourne l'author et le gossip spécifique à l'index renseigné
   def self.find(id)
-    id = id.to_i
-    all_gossips = []
-    CSV.read("./db/gossip.csv").each_with_index do |item, index|
-      if (index == id or index == (id + 1))
-        all_gossips << item
+    gossips = []
+    CSV.read("./db/gossip.csv").each_with_index do |csv_line, index|
+      if (id == index+1)
+        gossips << Gossip.new(csv_line[0], csv_line[1])
       end
     end
-    return all_gossips
+    return gossips
   end
-
 end
