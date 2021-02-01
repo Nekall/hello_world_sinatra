@@ -9,13 +9,13 @@ class Gossip
     @array << @author
     @array << @content
   end
-  #Sauvegarder les potins + autheurs dans un CSV
+  #Sauvegarder les potins + auteurs dans un CSV
   def save
     CSV.open("db/gossip.csv", "ab") do |csv|
       csv << @array
     end
   end
-  #Méthode qui retourne l'ingralité des gossips
+  #Méthode qui retourne l'ingralité des potins
   def self.all
     all_gossips = []
     CSV.read("./db/gossip.csv").each do |csv_line|
@@ -23,7 +23,7 @@ class Gossip
     end
     return all_gossips
   end
-  #Méthode qui retourne l'author et le gossip spécifique à l'index renseigné
+  #Méthode qui retourne l'auteur et le potin spécifique à l'index renseigné
   def self.find(id)
     gossips = []
     CSV.read("./db/gossip.csv").each_with_index do |csv_line, index|
