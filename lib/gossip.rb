@@ -27,7 +27,7 @@ class Gossip
   def self.find(id)
     gossips = []
     CSV.read("./db/gossip.csv").each_with_index do |csv_line, index|
-      if (id == index+1)
+      if (id == index)
         gossips << Gossip.new(csv_line[0], csv_line[1])
       end
     end

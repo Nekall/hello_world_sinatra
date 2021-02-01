@@ -1,15 +1,18 @@
 <html>
   <head>
     <title>The Gossip Project</title>
+    <hr>
   </head>
   <body>
-    <h1>Coucou il y a pas encore de potin, mais tu peux en crée un !</h1>
-    <a href="/gossips/new/">Une idée de potin(s) à ajouter ?</a>
+    <h1 style="font-size:20px">The Gossip Project</h1>
+    <hr>
+    <a href="/gossips/new/"><p style="font-size:12px">Une idée de potin(s) à ajouter ?</p></a>
+    <hr>
     <% gossips.each_with_index do |gossip, index| %>
-    <a href="http://localhost:4567/gossips/<%= index + 1 %>">
-      <p>
-        <%= gossip.author %><br/>
-        <%= gossip.content %>
+    <a href="http://localhost:4567/gossips/<%= index%>">
+      <p style="font-size:10px">
+        <%= gossip.content %><br/>
+        <%= gossip.author %>
       </p></a>
     <% end %>
   </body>

@@ -3,14 +3,17 @@
     <title>The Gossip Project - Show gossip</title>
   </head>
   <body>
-    <h1>PAGE POTIN</h1>
-    <h1>Voici la page du potin n° <%= params[:id] %></h1>
+    <hr>
+    <h1 style="font-size:20px" >PAGE POTIN</h1>
+    <hr>
+    <h1 style="font-size:15px">Voici la page du potin n° <%= params[:id] %></h1>
+    <hr>
     <% gossips.each do |gossip| %>
-      <p>
-      Voici le potin n° <%= id%><br/>
-      Son auteur : <%= gossip.author %><br/>
-      Le contenu du potin : <%= gossip.content %>
+      <p style="font-size:10px">
+        <u>Son auteur</u> : <%= gossip.author %><br/>
+        <u>Le contenu du potin</u> : <%= gossip.content %>
       </p>
   <% end %>
+  <a href="http://localhost:4567/"><p style="font-size:10px">↶ Accueil</p></a>
   </body>
 </html>
