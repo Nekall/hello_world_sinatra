@@ -1,4 +1,5 @@
-# hello_world_sinatra
+# Projet : Une application en Sinatra 
+<hr>
 Le but: 
 Faire un programme qui stock et dans lequel on peut ajouter des potins. 
 En faire une application Web via Sinatra. 
@@ -10,7 +11,7 @@ Fonctionnement:
 > Une page sur laquelle on peut modifier ou supprimer des potins [Fonctionnalité non présente]
 > Une section commentraires sur la page "show" [Fonctionnalité non présente]
 
-
+<hr>
 Le but de ce programme : 
 
     Utiliser un serveur ;
