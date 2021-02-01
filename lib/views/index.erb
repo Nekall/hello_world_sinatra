@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>Mon super site de gossip, depuis le dossier views !</h1>
+    <p><a href="/gossips/new/">Colporte un potin pour la modique somme de 15€/mois</a></p>
+    
+    <h1>La listes de tous les Gossips</h1>
+      <form action='/gossips/all/'>
+        <% gossips.each do |gossip| %>
+                <p>
+                  <%= gossip.author %><br/>
+                  <%= gossip.content %>
+                </p>
+              <% end %>
+      </form>
+  </body>
+</html>
