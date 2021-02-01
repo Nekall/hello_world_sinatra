@@ -1,6 +1,6 @@
 # Projet : Une application en Sinatra 
 <hr>
-Le but: <br>
+Le but du projet: <br>
 Faire un programme qui stock et dans lequel on peut ajouter des potins. <br>
 En faire une application Web via Sinatra. <br>
 
