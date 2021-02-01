@@ -5,11 +5,11 @@ Faire un programme qui stock et dans lequel on peut ajouter des potins. <br>
 En faire une application Web via Sinatra. <br>
 
 <br>
-Fonctionnement: 
-> Une page d'accueil sur laquelle on peut voir tout les potins
-> Une page sur laquelle on peut ajouter des potins 
-> Une page sur laquelle on peut modifier ou supprimer des potins [Fonctionnalité non présente]
-> Une section commentraires sur la page "show" [Fonctionnalité non présente]
+Fonctionnement: <br>
+> Une page d'accueil sur laquelle on peut voir tout les potins <br>
+> Une page sur laquelle on peut ajouter des potins <br>
+> Une page sur laquelle on peut modifier ou supprimer des potins [Fonctionnalité non présente]<br>
+> Une section commentraires sur la page "show" [Fonctionnalité non présente]<br>
 
 <hr>
 Le but de ce programme : 
