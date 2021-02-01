@@ -21,5 +21,5 @@ Le but de ce programme :
     Récupérer de l'information à partir de formulaires et la stocker en base de données.
 
 
-# L'adresse d'accès en local sera : http://localhost:4567/
-
+L'adresse d'accès en local sera : http://localhost:4567/
+Pour lancer le prog, $ shotgun -p 4567
