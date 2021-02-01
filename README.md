@@ -23,4 +23,7 @@ Le but de ce programme :
 
 <hr>
 L'adresse d'accès en local sera : http://localhost:4567/ <br>
-Pour lancer le prog, $ shotgun -p 4567
+Pour lancer le prog: $ shotgun -p 4567
+<br>
+<br>
+<br>
