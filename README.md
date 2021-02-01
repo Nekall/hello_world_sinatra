@@ -20,6 +20,6 @@ Le but de ce programme :
     Créer et avoir une base de données ;
     Récupérer de l'information à partir de formulaires et la stocker en base de données.
 
-
-L'adresse d'accès en local sera : http://localhost:4567/
+<hr>
+L'adresse d'accès en local sera : http://localhost:4567/ <br>
 Pour lancer le prog, $ shotgun -p 4567
